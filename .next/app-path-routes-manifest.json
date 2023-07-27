@@ -1,8 +1,8 @@
 {
-  "/favicon.ico/route": "/favicon.ico",
   "/page": "/",
-  "/(protected)/attachments/page": "/attachments",
+  "/favicon.ico/route": "/favicon.ico",
   "/(protected)/logout/page": "/logout",
-  "/(public)/login/page": "/login",
-  "/(protected)/upload/page": "/upload"
+  "/(protected)/attachments/page": "/attachments",
+  "/(protected)/upload/page": "/upload",
+  "/(public)/login/page": "/login"
 }

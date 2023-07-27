@@ -37,7 +37,7 @@ const baseAxios = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z.create(
 baseAxios.interceptors.request.use((config)=>{
     const token = localStorage.getItem("token");
     config.headers["Authorization"] = "Bearer " + token;
-    config.withCredentials = true;
+    //config.withCredentials = true;
     return config;
 }, (error)=>{
     Promise.reject(error);

@@ -515,7 +515,7 @@ var utils = __webpack_require__(23223);
 
 
 function Table(props) {
-    const { columns, rows, shadow = true } = props;
+    const { columns, rows, shadow = true, containerClassNames } = props;
     const columnsJsx = /*#__PURE__*/ jsx_runtime_.jsx("tr", {
         children: columns.map((column)=>{
             return /*#__PURE__*/ jsx_runtime_.jsx("th", {
@@ -546,9 +546,9 @@ function Table(props) {
         })
     });
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: (0,utils/* classNames */.A)("relative overflow-x-auto  sm:rounded-lg", shadow ? "shadow-md" : ""),
+        className: (0,utils/* classNames */.A)("relative overflow-x-auto  sm:rounded-lg overflow-y-auto", shadow ? "shadow-md" : "", containerClassNames),
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("table", {
-            className: "w-full text-sm text-left text-gray-500 dark:text-gray-400",
+            className: "table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400",
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx("thead", {
                     className: "text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400",
@@ -676,7 +676,7 @@ const AttachmentPage = ()=>{
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "flex flex-col items-center justify-center h-screen p-20",
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
-            customClassNames: "max-w-xl",
+            customClassNames: "max-w-4xl",
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx(RenderIf/* default */.Z, {
                     isTrue: isLoading,
@@ -754,7 +754,7 @@ const Attachments = ()=>{
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [669,67,953,542,920,999,976,536], () => (__webpack_exec__(49939)));
+var __webpack_exports__ = __webpack_require__.X(0, [669,97,953,542,920,300,976,536], () => (__webpack_exec__(49939)));
 module.exports = __webpack_exports__;
 
 })();

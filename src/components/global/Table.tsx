@@ -12,10 +12,11 @@ type TableProps<Row> = {
   columns: ColumnConfig<Row>[];
   rows: Row[];
   shadow?: boolean;
+  containerClassNames?: string;
 };
 
 function Table(props: TableProps<any>) {
-  const { columns, rows, shadow = true } = props;
+  const { columns, rows, shadow = true, containerClassNames } = props;
 
   const columnsJsx = (
     <tr>
@@ -68,11 +69,12 @@ function Table(props: TableProps<any>) {
   return (
     <div
       className={classNames(
-        "relative overflow-x-auto  sm:rounded-lg",
-        shadow ? "shadow-md" : ""
+        "relative overflow-x-auto  sm:rounded-lg overflow-y-auto",
+        shadow ? "shadow-md" : "",
+        containerClassNames
       )}
     >
-      <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+      <table className="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           {columnsJsx}
         </thead>

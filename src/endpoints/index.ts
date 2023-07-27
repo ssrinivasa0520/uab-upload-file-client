@@ -11,7 +11,7 @@ baseAxios.interceptors.request.use(
     const token = localStorage.getItem("token");
 
     config.headers["Authorization"] = "Bearer " + token;
-    config.withCredentials = true;
+    //config.withCredentials = true;
     return config;
   },
   (error) => {

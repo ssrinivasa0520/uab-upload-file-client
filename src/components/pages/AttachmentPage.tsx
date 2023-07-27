@@ -75,7 +75,7 @@ const AttachmentPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen p-20">
-      <Card customClassNames="max-w-xl">
+      <Card customClassNames="max-w-4xl">
         <RenderIf isTrue={isLoading}>
           <div className="w-full h-full flex justify-center items-center">
             <Spinner />
