@@ -20,7 +20,7 @@ const PublicLayout = (props: PublicLayoutProps) => {
     if (user) {
       router.replace(Routes.upload);
     }
-  }, [user]);
+  }, [user, router]);
 
   return <RenderIf isTrue={!Boolean(user)}>{children}</RenderIf>;
 };

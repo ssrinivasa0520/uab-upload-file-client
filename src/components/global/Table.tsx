@@ -21,7 +21,11 @@ function Table(props: TableProps<any>) {
     <tr>
       {columns.map((column) => {
         return (
-          <th scope="col" className="px-6 py-3">
+          <th
+            scope="col"
+            className="px-6 py-3"
+            key={`${column.colName}-${column.title}`}
+          >
             {column.title}
           </th>
         );
@@ -32,13 +36,23 @@ function Table(props: TableProps<any>) {
   const rowsJsx = rows.length ? (
     rows.map((row) => {
       return (
-        <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        <tr
+          className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+          key={row.id}
+        >
           {columns.map((column) => {
             const value = row[column.colName];
             const formattedValue = column.formatter
               ? column.formatter(value, row)
               : value;
-            return <td className="px-6 py-4">{formattedValue}</td>;
+            return (
+              <td
+                className="px-6 py-4"
+                key={`${column.colName}-${column.title}`}
+              >
+                {formattedValue}
+              </td>
+            );
           })}
         </tr>
       );

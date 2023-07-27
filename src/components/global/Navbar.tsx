@@ -3,17 +3,19 @@
 import Routes from "@/constants/routes.constants";
 import useUser from "@/hooks/useUser";
 import { Url } from "next/dist/shared/lib/router/router";
+import Image from "next/image";
 import Link from "next/link";
 
 const BrandLogo = () => {
   return (
     <>
-      {" "}
       <a href="#" className="flex items-center">
-        <img
+        <Image
           src="https://flowbite.com/docs/images/logo.svg"
-          className="h-8 mr-3"
+          className="mr-3"
           alt="Logo"
+          width={30}
+          height={30}
         />
         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
           UAB File Upload

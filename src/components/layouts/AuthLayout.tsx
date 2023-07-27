@@ -21,7 +21,7 @@ const AuthLayout = (props: AuthLayoutProps) => {
     if (!user) {
       router.replace(Routes.login);
     }
-  }, [user]);
+  }, [user, router]);
 
   return <RenderIf isTrue={Boolean(user)}>{children}</RenderIf>;
 };
