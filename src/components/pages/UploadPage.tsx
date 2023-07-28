@@ -172,7 +172,7 @@ const UploadPage = () => {
   const [view, setView] = React.useState<UploadPageView>("upload");
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen p-20">
+    <div className="flex flex-col items-center justify-center min-h-screen p-20">
       <Card customClassNames="max-w-lg">
         <div className="space-y-10">
           <div>

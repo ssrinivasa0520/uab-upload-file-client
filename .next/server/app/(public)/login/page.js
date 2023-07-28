@@ -561,7 +561,7 @@ const LoginPage = ()=>{
         authenticate(values);
     };
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: "flex flex-col items-center justify-center h-screen p-20",
+        className: "flex flex-col items-center justify-center min-h-screen p-20",
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
             customClassNames: "max-w-lg",
             children: [
@@ -751,7 +751,7 @@ function Home() {
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [669,97,953,676,300,976,815], () => (__webpack_exec__(28582)));
+var __webpack_exports__ = __webpack_require__.X(0, [669,67,953,676,181,976,815], () => (__webpack_exec__(28582)));
 module.exports = __webpack_exports__;
 
 })();

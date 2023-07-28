@@ -674,7 +674,7 @@ const AttachmentPage = ()=>{
         }
     ];
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: "flex flex-col items-center justify-center h-screen p-20",
+        className: "flex flex-col items-center justify-center min-h-screen p-20",
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
             customClassNames: "max-w-4xl",
             children: [
@@ -754,7 +754,7 @@ const Attachments = ()=>{
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [669,97,953,542,920,300,976,536], () => (__webpack_exec__(49939)));
+var __webpack_exports__ = __webpack_require__.X(0, [669,67,953,542,920,181,976,536], () => (__webpack_exec__(49939)));
 module.exports = __webpack_exports__;
 
 })();

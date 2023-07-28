@@ -670,7 +670,7 @@ const SuccessMessage = ({ setView })=>{
 const UploadPage = ()=>{
     const [view, setView] = react_default().useState("upload");
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: "flex flex-col items-center justify-center h-screen p-20",
+        className: "flex flex-col items-center justify-center min-h-screen p-20",
         children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
             customClassNames: "max-w-lg",
             children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -747,7 +747,7 @@ const Upload = ()=>{
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [669,97,953,676,555,300,976,536,815], () => (__webpack_exec__(29563)));
+var __webpack_exports__ = __webpack_require__.X(0, [669,67,953,676,555,181,976,536,815], () => (__webpack_exec__(29563)));
 module.exports = __webpack_exports__;
 
 })();

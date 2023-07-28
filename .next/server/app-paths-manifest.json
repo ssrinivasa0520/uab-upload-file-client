@@ -1,8 +1,8 @@
 {
   "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(protected)/logout/page": "app/(protected)/logout/page.js",
   "/(protected)/attachments/page": "app/(protected)/attachments/page.js",
-  "/(protected)/upload/page": "app/(protected)/upload/page.js",
-  "/(public)/login/page": "app/(public)/login/page.js"
+  "/(protected)/logout/page": "app/(protected)/logout/page.js",
+  "/(public)/login/page": "app/(public)/login/page.js",
+  "/(protected)/upload/page": "app/(protected)/upload/page.js"
 }
